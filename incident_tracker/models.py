@@ -1,3 +1,6 @@
+from incident_tracker.errors import validate_scale
+
+
 from enum import Enum
 
 class Category(Enum):
@@ -23,4 +26,6 @@ _PRIORITY_MATRIX = {
 
 
 def calculate_priority(impact, urgency):
+    impact = validate_scale(impact, "impact")
+    urgency = validate_scale(urgency, "urgency")
     return _PRIORITY_MATRIX[impact][urgency]
