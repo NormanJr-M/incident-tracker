@@ -30,7 +30,7 @@ def test_create_incident_returns_new_id(db):
 
 
 
-def test_create_incident_returns_new_id(db):
+def test_create_incident_stores_expected_defaults(db):
     incident_id = create_incident(
          db,
          title="Outlook won't open",
