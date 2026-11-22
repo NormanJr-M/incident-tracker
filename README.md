@@ -1,8 +1,8 @@
-IT Incident Tracker
+# IT Incident Tracker
 
 A command-line IT incident management application built with Python and SQLite. It allows users to record incidents, assign priorities based on impact and urgency, update incident details, and track resolutions.
 
-Features
+## Features
 
 - **Create incidents:** Record incident details and reporter information.
 - **Automatic prioritisation:** Calculate priority using impact and urgency.
@@ -15,59 +15,61 @@ Features
 - **Logging:** Record application events and unexpected errors.
 - **Automated tests:** Verify behaviour using pytest.
 
-Technologies
+## Technologies
 
 - Python
 - SQLite
 - pytest
 - Git
 
-Requirements
+## Requirements
 
 - Python 3.14 or a compatible Python version
 - pip
 
-Installation
+## Installation
 
 Open Command Prompt in the project directory and create a virtual environment:
 
-bash
+```bash
 python -m venv .venv
-
+```
 
 Activate it on Windows Command Prompt:
 
-bat
+```bat
 .venv\Scripts\activate
-
+```
 
 Install the dependencies:
 
-bash
+```bash
 python -m pip install -r requirements.txt
+```
 
-
-Running the application
+## Running the application
 
 From the project root, run:
 
-bash
+```bash
 python -m incident_tracker.app
-
+```
 
 The application stores incidents in a local SQLite database named `incidents.db`.
 
-Running the tests
+## Running the tests
 
-bash
+Run the complete test suite with:
+
+```bash
 python -m pytest -v
+```
 
+The project currently has **53 automated tests**, all passing.
 
-The project has passed all 52 automated tests.
+## Project structure
 
-Project structure
-
-text
+```text
 incident-tracker/
 |-- incident_tracker/
 |   |-- __init__.py
@@ -82,9 +84,17 @@ incident-tracker/
 |-- tests/
 |-- .gitignore
 |-- README.md
--- requirements.txt
+`-- requirements.txt
+```
 
+## Learning objectives
 
-Learning objectives
+This project demonstrates:
 
-This project demonstrates Python modules and functions, input validation, exception handling, SQLite database operations, separation of concerns, logging, automated testing, and Git version control.
+- Python modules and functions
+- Input validation and exception handling
+- SQLite database operations and SQL queries
+- Separation of concerns
+- Logging and error reporting
+- Automated testing with pytest
+- Git version control
